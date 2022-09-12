@@ -1,0 +1,438 @@
+@font-face {
+    font-family: DINPro;
+    src: url("font/GraublauWeb.otf") format("opentype");
+}
+
+@font-face {
+    font-family: DINPro;
+    font-weight: bold;
+    src: url("font/DINProRegular.otf") format("opentype");
+}
+
+body {
+    font-family: "DINPro", Helvetica, sans-serif;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    padding-top: 0.5rem;
+}
+
+.navbar {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../assets/icons/menu-outline.svg");
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.navbar-search-icon {
+    background-image: url("../assets/icons/search-outline.svg");
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+}
+
+.form-control {
+    border: 1px solid rgb(0 0 0 / 60%);
+    height: 30px;
+}
+
+.menu-items {
+    height: 45px;
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 1px #949494;
+    padding-left: 2px;
+}
+
+.menu-items:last-child {
+    border: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 10px 15px 0 rgb(24 22 22 / 8%), 20px 1px 20px 0px hwb(0deg 6% 94% / 80%);
+}
+
+.close-icon {
+    z-index: 100000;
+    position: fixed;
+    top: 1rem;
+    font-size: 16px;
+    color: #000;
+}
+
+.animated {
+    -webkit-transition: .75s ease-in-out;
+    -moz-transition: .75s ease-in-out;
+    -o-transition: .75s ease-in-out;
+    transition: .75s ease-in-out;
+}
+
+.navbar-nav {
+    margin: 0 7%;
+}
+
+.navbar-toggler.collapsed .close-icon {
+    visibility: hidden;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    visibility: visible;
+}
+
+.carousel-indicators {
+    bottom: -3rem;
+    justify-content: end;
+}
+
+.carousel-indicators li {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #ff5c5c;
+}
+
+.banner-carousel {
+    padding-top: 0.5rem;
+}
+
+a,
+a:hover {
+    color: #000;
+}
+
+.carousel-caption-main {
+    font-weight: 700;
+}
+
+.carousel-caption {
+    bottom: -4.8rem;
+    left: 0;
+}
+
+.icon-arrow-right {
+    background-image: url("../assets/icons/arrow-forward-outline.svg");
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+}
+
+figure img {
+    width: 100%
+}
+
+.card-link:hover,
+.navbar-brand-name a:hover {
+    text-decoration: none;
+}
+
+#artists {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.artist-container img {
+    height: 210px;
+    width: 210px;
+}
+
+footer .row {
+    margin: 0;
+}
+
+.facebook-icon {
+    background-image: url("../assets/icons/facebook-outline.svg");
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+}
+
+.twitter-icon {
+    background-image: url("../assets/icons/twitter-outline.svg");
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.address {
+    line-height: 1.8;
+}
+
+.copyright-text {
+    opacity: .4;
+}
+
+@media(min-width: 320px) {
+    .navbar-brand-name {
+        font-size: 20px;
+    }
+
+    .navbar,
+    main {
+        width: 94%;
+        margin: 0 3%;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    main {
+        margin-top: 65px;
+    }
+
+    .navbar,
+    .carousel {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .input-group {
+        position: absolute;
+        top: 2.5rem;
+        z-index: 1;
+        right: 3%;
+        width: 60%;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    #artists {
+        column-count: 1;
+    }
+
+    .navbar-light .navbar-toggler {
+        padding-right: 0px;
+    }
+
+    .menu-items {
+        font-size: 18px;
+    }
+
+    .carousel img {
+        height: 45vh;
+    }
+
+    .carousel-caption {
+        margin-left: 0.5rem;
+    }
+
+    #cards {
+        margin-top: 5.5rem;
+    }
+
+    .section-content {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        border-top: 1px solid;
+        margin-top: 1.25rem;
+    }
+
+    #channel-section {
+        margin-bottom: 1.25rem;
+        padding-bottom: .5rem;
+    }
+
+    .container-cards h3,
+    #channel-view-all,
+    #blog-view-all,
+    #artist-list h3 {
+        font-size: 18px;
+    }
+
+    .view-all-link {
+        margin-top: -0.2rem;
+    }
+
+    .container-cards h6,
+    .container-cards div,
+    #artists {
+        font-size: 16px;
+    }
+
+    hr {
+        margin-right: 15px;
+        margin-left: 15px;
+        border-color: #fff;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .twitter-icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .links {
+        padding-left: .25rem;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .navbar-brand-name {
+        font-size: 25px;
+    }
+
+    .menu-items {
+        font-size: 20px;
+    }
+
+    .navbar {
+        height: 90px;
+    }
+
+    main {
+        margin-top: 95px;
+    }
+
+    .input-group {
+        position: relative;
+        top: 0;
+        z-index: 1;
+        right: 3%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #artists {
+        column-count: 2;
+    }
+
+    .carousel img {
+        height: 55vh;
+    }
+
+    .carousel-indicators {
+        margin-right: 1.5rem;
+    }
+
+    #cards {
+        margin-top: 6.5rem;
+    }
+
+    .section-content {
+        border-top: 1px solid;
+        padding-top: .25rem;
+        margin-top: 3.5rem;
+    }
+
+    h3 {
+        font-weight: 600;
+    }
+
+    .container-cards h3,
+    #channel-view-all,
+    #blog-view-all,
+    #artist-list h3 {
+        font-size: 20px;
+    }
+
+    .twitter-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+
+    hr {
+        margin-right: 20px;
+        margin-left: 28px;
+    }
+
+    .links {
+        padding-left: 15px;
+    }
+
+    .address,
+    .copyright-text {
+        margin-left: 30px !important;
+    }
+}
+
+#cards figure:hover img {
+    box-shadow: 0 10px 15px 0 rgb(24 23 23 / 8%), -1px 0px 5px 1px hwb(0deg 6% 94% / 80%)
+}
+
+#cards figure:hover .text-effect {
+    opacity: .7;
+    text-decoration: underline;
+}
+
+@media(min-width: 992px) {
+    .navbar-brand-name {
+        font-size: 30px;
+    }
+
+    .navbar,
+    main {
+        width: 90%;
+        margin: 0 5%;
+    }
+    main {
+        margin-top: 95px;
+    }
+    .navbar,
+    .carousel {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .carousel img {
+        height: 70vh;
+    }
+
+    .carousel-indicators {
+        margin-right: 2.5rem;
+    }
+
+    .carousel-caption {
+        margin-left: 2rem;
+    }
+
+    .section-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #artists {
+        column-count: 3;
+    }
+
+    footer {
+        padding: 2rem 4rem;
+    }
+}
