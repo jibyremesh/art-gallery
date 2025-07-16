@@ -23,3 +23,10 @@ A responsive and interactive front page for an art gallery website featuring art
 - **JavaScript / jQuery** – DOM manipulation and dynamic UI
 - **Font Awesome** – Icons for search, social media, etc.
 
+## 🌐 Live Demo
+https://jibyremesh.github.io/art-gallery/
+
+## 📷 Screenshot
+<img width="3064" height="7012" alt="jibyremesh github io_art-gallery_" src="https://github.com/user-attachments/assets/3cbcdb65-2a34-4c31-b5a4-c0ad99b9062f" />
+
+
